@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Guide - MRECW</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<section id="login-section" class="centered">
+    <h2>Login</h2>
+    <form id="login-form">
+        <input type="text" id="username" placeholder="Username" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+    <div id="login-msg"></div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section id="app-content" style="display:none;">
+
+    <header>
+        <h1>MRECW Campus Guide</h1>
+        <nav>
+            <a href="#map-section">Campus Map</a>
+            <a href="#announce-section">Announcements</a>
+            <a href="#dept-section">Departments</a>
+            <a href="#attendance-section">Attendance</a>
+            <a href="#help-section">Helpline</a>
+        </nav>
+    </header>
+
+    <!-- CAMPUS MAP -->
+    <section id="map-section">
+        <h2>Campus Map</h2>
+        <div id="map">
+            <iframe
+                width="100%"
+                height="350"
+                src="https://maps.google.com/maps?q=Maisammaguda%20Malla%20Reddy%20Engineering%20College%20for%20Women&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" style="border:0;" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- ANNOUNCEMENTS -->
+    <section id="announce-section">
+        <h2>Announcements</h2>
+        <ul id="announce-list"></ul>
+    </section>
+
+    <!-- DEPARTMENTS WITH FACULTY -->
+    <section id="dept-section">
+        <h2>Departments & Faculty</h2>
+        <ul id="dept-list"></ul>
+    </section>
+
+    <!-- ATTENDANCE -->
+    <section id="attendance-section">
+        <h2>Student Attendance</h2>
+        <p><strong>Attendance Percentage:</strong> <span id="attendance-value">--%</span></p>
+        <button id="update-attendance">Update Attendance</button>
+    </section>
+
+    <!-- HELPLINE -->
+    <section id="help-section">
+        <h2>Helpline</h2>
+        <p><strong>College Office:</strong> +91‑9346118802, +91‑9966023477</p>
+        <p><strong>Email:</strong> rg.mrcew@gmail.com</p>
+        <p><strong>Timings:</strong> 09:00 A.M. – 05:30 P.M.</p>
+    </section>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
